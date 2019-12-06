@@ -1,10 +1,10 @@
 import "reflect-metadata";
 import { Container } from "inversify";
 import { TYPES } from "./types";
-import { Bot } from "./bot";
+import { Bot } from "./app/bot";
 import { Client } from "discord.js";
-import { MessageResponder } from "./services/message-responder";
-import { PingFinder } from "./services/ping-finder";
+import { MessageResponder } from "./app/services/message-responder";
+import { PingFinder } from "./app/services/ping-finder";
 
 let container = new Container();
 
